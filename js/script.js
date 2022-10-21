@@ -44,3 +44,29 @@ function selectLevel() {
   }
 
 }
+
+function startGame(boxesNumber) {
+
+  createMinesweeper(boxesNumber);
+
+}
+
+function createMinesweeper(boxesNumber) {
+
+  game.classList.remove("d-none");
+
+  gameArea.innerHTML = "<h2 id='score' class='mb-5'></h2>";
+
+  gameArea.innerHTML += "<div id='game-grid' class='row'></div>";
+
+  let boxes = "";
+
+  for (let i = 0; i < boxesNumber; i++) {
+    boxes += "<div class='box'>" + "<div class='overlay'></div>" + "<div class='point'></div>" + "</div>";
+  }
+
+  let gameGrid = document.getElementById('game-grid');
+
+  gameGrid.innerHTML += boxes;
+
+}
