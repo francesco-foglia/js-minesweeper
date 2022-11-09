@@ -104,6 +104,10 @@ function startGame(boxesNumber) {
 
           box.style.pointerEvents = "none";
 
+          Array.from(overlays).forEach((element) => {
+            element.classList.add("opacity");
+          })
+
         } else {
           counter++;
         }
