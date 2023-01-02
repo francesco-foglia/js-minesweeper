@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Press Start 2P', cursive;
   color: white;
@@ -15,6 +20,8 @@ h1,
 h2 {
   text-align: center;
   text-shadow: 2px 2px #f70d68;
+  hyphens: manual;
+  line-height: 2;
 }
 
 .buttons-container {
